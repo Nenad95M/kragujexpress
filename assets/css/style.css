@@ -1,0 +1,36 @@
+/* Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+}
+.navigation{
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    list-style: none;
+    opacity: 1;
+}
+.hero{
+    background: url('/assets/img/turska2.jpg') center/cover no-repeat ;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+.hero-text{
+    text-align: center;
+    color: aliceblue;
+    font-size:x-large;
+    
+}
+
+.footer{
+    text-align: center;
+}

@@ -4,33 +4,60 @@
     margin: 0;
     padding: 0;
 }
-a{
-    color: inherit;
+
+.nav-container{
+    z-index: 1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #333; */
+    mask-border-outset: 5;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 1s;
+    padding: 10px;
 }
 .navigation{
-    position: fixed;
+    align-self: flex-end;
     display: flex;
-    flex-direction: row-reverse;
-    gap: 1rem;
+    flex-flow: row;
+    gap: 10px;
     list-style: none;
-    opacity: 1;
+}
+.navigation a{
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.navigation a:hover{
+  border-bottom: #333;
+
 }
 .hero{
     background: url('/assets/img/turska2.jpg') center/cover no-repeat ;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.5;
+    opacity: 0.8;
+
 }
 .hero-text{
     text-align: center;
-    color: aliceblue;
-    font-size:x-large;
-    
+    color: rgb(255, 255, 255);
+    font-size:3em;
+}
+.hero-text h1,h2{
+    margin-top: 1rem;
 }
 
 .footer{
     text-align: center;
+    padding: 1rem;
 }

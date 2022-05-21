@@ -47,13 +47,14 @@ img {
 #header .logo {
     font-size: 2rem;
     font-weight: 600;
+    font-style: oblique;    
 }
 
 #header .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: var(--primary);
     color: #fff;
     width: 100%;
     height: 70px;
@@ -68,6 +69,7 @@ img {
     padding: 0.5rem;
     margin: 0 0.2rem;
     color: #fff;
+    
 }
 
 #header .navbar ul {
@@ -77,8 +79,9 @@ img {
 #header .hero {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;;
     text-align: center;
     background: url(../img/turska2.jpg) no-repeat center center/cover;
 }
@@ -87,11 +90,49 @@ img {
     display: none;
 }
 
+
 #header .hero-content {
     color: #fff;
     font-size: 1rem;
 }
+#header .hero-content h1{
+    font-weight: 900;
+}
+#header .button {
 
+    border: 1px solid var(--primary);
+    border-radius: 41px;
+    background-color: var(--primary);
+    display: inline-block;
+    padding: 0.6rem 4rem;
+    color: #fff;
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+/* #header .hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+} */
+#header .hero *{
+    z-index: 2;
+}
+/* #header .hero-content{
+    background-color:rgba(0, 0, 0, 0.3);
+} */
+#header .desktop-menu *{
+    z-index: 2;
+}
+@media(min-width: 768px) {
+#header .hero-content{
+    font-size: 2rem;
+}
+}
 @media(max-width: 768px) {
     #header .desktop-menu {
         display: none !important;

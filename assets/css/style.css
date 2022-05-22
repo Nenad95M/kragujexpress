@@ -84,7 +84,7 @@ img {
     align-items: center;
     justify-content: space-evenly;;
     text-align: center;
-    background: url(../img/turska2.jpg) no-repeat center center/cover;
+    background: url(../img/turska3.jpg) no-repeat center center/cover;
 }
 
 #header .phone-menu {
@@ -111,6 +111,7 @@ img {
     font-weight: 500;
     font-size: 1rem;
 }
+
 
 
 @media(min-width: 768px) {

@@ -130,7 +130,13 @@ img {
         display: block;
     }
 }
-
-.footer {
+#footer .company-data{
+    text-align: justify;
+    padding: 1rem;
+}
+#footer a{
+    color: var(--dark);
+}
+#footer .copyright-info {
     text-align: center;
 }

@@ -65,8 +65,7 @@ img {
 }
 
 #header .transparent {
-    opacity: 0.8;
-}
+display: none;}
 
 #header .navbar a {
     padding: 0.5rem;

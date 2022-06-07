@@ -222,7 +222,37 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+/*contact phone*/
+@media(max-width: 768px) {
+    #contact-page  {
+        grid-template-columns: auto;
+    }
+}
+#forma input{
+width: 100%;
+padding: 1rem;
+margin: 0.25rem;
+font-size: 1.2rem;
+}
+#forma .message{
+    width: 100%;
+    min-height: 15rem;
+    padding: 1rem;
+    font-size: 1.1rem;
 
+}
+#forma .btn{
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#forma .btn:hover{
+    background-color: var(--primary-darker);
+}
+#forma .btn:active{
+    transform: scale(0.98);
+}
 /* footer section start */
 #footer {
     border-top: 1px solid var(--dark);

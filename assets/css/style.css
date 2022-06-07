@@ -42,7 +42,10 @@ img {
 .text-secondary {
     color: var(--secondary);
 }
-
+section{
+    padding-top: 1rem;
+    padding: 1rem;
+}
 /* header section start */
 #header .logo {
     font-size: 2rem;
@@ -134,13 +137,24 @@ img {
     #header .phone-menu {
         display: block;
     }
-    #header .button{
+
+    #header .button {
         display: block;
     }
 }
 
 /*Header section end*/
+#buss-gallery .title{
+    text-align: center;
+    font-size: 2rem;
+}
+#buss-gallery .gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}#buss-gallery .gallery img:hover{
 
+}
 /* footer section start */
 #footer a {
     color: var(--dark);

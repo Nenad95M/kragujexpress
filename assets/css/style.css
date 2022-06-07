@@ -206,16 +206,29 @@ section {
     text-align: center;
     color: var(--secondary);
 }
+
 #about .logo {
     max-width: 400px;
     margin: auto;
 }
+.signature{
+    text-align: right;
+   font-style: italic;
+}
 /*about section end*/
+
+#contact-page {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /* footer section start */
 #footer {
     border-top: 1px solid var(--dark);
 
 }
+
 #footer a {
     color: var(--dark);
 }

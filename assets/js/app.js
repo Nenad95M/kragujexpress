@@ -15,4 +15,3 @@ window.onscroll = function () {
 
 const godinePoslovanja= new Date().getFullYear() -1987;
 document.getElementById('godinePoslovanja').innerText=godinePoslovanja;
-console.log(godinePoslovanja);

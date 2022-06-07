@@ -43,10 +43,19 @@ img {
 .text-secondary {
     color: var(--secondary);
 }
-section{
+
+section {
     padding-top: 1rem;
     padding: 1rem;
 }
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 2rem;
+    overflow: hidden;
+}
+
 /* header section start */
 #header .logo {
     font-size: 2rem;
@@ -107,10 +116,12 @@ section{
 #header .hero-content h1 {
     font-weight: 900;
 }
-#header .button-holder{
+
+#header .button-holder {
     display: flex;
     gap: 1rem;
 }
+
 #header .button {
 
     border: 1px solid var(--primary);
@@ -123,9 +134,11 @@ section{
     font-size: 1rem;
     width: 250px;
 }
+
 #header .button:hover {
     background-color: var(--primary-darker);
 }
+
 #header .button:active {
     background-color: var(--primary-darker);
     transform: scale(0.90);
@@ -150,41 +163,65 @@ section{
     #header .hero {
         background: url(../img/budva.jpg) no-repeat center center/cover;
     }
-    #header .button-holder{
+
+    #header .button-holder {
         flex-direction: column;
     }
 
 }
 
 /*Header section end*/
-#buss-gallery .title{
+#buss-gallery .title {
     text-align: center;
     font-size: 2rem;
     padding: 1rem;
 }
-#buss-gallery .gallery{
+
+#buss-gallery .gallery {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
 }
-#buss-gallery .gallery img:hover{
- opacity: 0.9;
- cursor: pointer;
+
+#buss-gallery .gallery img:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
+
 /*gallery phone*/
 @media(max-width: 768px) {
-    #buss-gallery .gallery{
+    #buss-gallery .gallery {
         grid-template-columns: auto;
     }
 }
+
+/*gallery section end*/
+
+/*about section start*/
+#about {
+    margin-top: 70px;
+}
+
+#about .title {
+    text-align: center;
+    color: var(--secondary);
+}
+#about .logo {
+    max-width: 400px;
+    margin: auto;
+}
+/*about section end*/
 /* footer section start */
+#footer {
+    border-top: 1px solid var(--dark);
+
+}
 #footer a {
     color: var(--dark);
 }
 
 #footer section {
     text-align: center;
-    padding: 1rem;
 }
 
 #footer .footer-grid {

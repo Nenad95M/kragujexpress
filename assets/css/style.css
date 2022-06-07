@@ -228,9 +228,14 @@ section {
         grid-template-columns: auto;
     }
 }
+#contact-page .contact-info{
+text-align: center;
+}
+
 #contact-page .contact-form{
     padding:1rem 2rem;
 }
+
 #forma input{
 width: 100%;
 padding: 0.5rem;

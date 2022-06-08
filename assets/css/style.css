@@ -55,10 +55,12 @@ section {
     padding: 2rem 2rem;
     overflow: hidden;
 }
-.title{
+
+.title {
     text-align: center;
     padding: 1rem;
 }
+
 /* header section start */
 #header .logo {
     font-size: 2rem;
@@ -214,24 +216,42 @@ section {
     max-width: 400px;
     margin: auto;
 }
-.signature{
+
+.signature {
     text-align: right;
-   font-style: italic;
+    font-style: italic;
 }
+
 /*about section end*/
 
 #contact-page {
     margin-top: 70px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'section1 section2'
+} 
+
+#constact-page .section1 {
+    grid-area: section1;
 }
+
+#constact-page .section2 {
+    grid-area: section2;
+}
+
+#constact-page .section3 {
+   width: 100vw;
+}
+
 /*contact phone*/
 @media(max-width: 768px) {
-    #contact-page  {
-        grid-template-columns: auto;
-    }
+    #contact-page {
+        grid-template-areas:
+            'section1'
+            'section2'    }
 }
-#contact-page .contact-info{
+
+#contact-page .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,17 +259,18 @@ section {
     gap: 1rem;
 }
 
-#contact-page .contact-form{
-    padding:0 2rem;
+#contact-page .contact-form {
+    padding: 0 2rem;
 }
 
-#forma input{
-width: 100%;
-padding: 0.5rem;
-margin: 0.25rem;
-font-size: 1.2rem;
+#forma input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    font-size: 1.2rem;
 }
-#forma .message{
+
+#forma .message {
     width: 100%;
     min-height: 10rem;
     padding: 1rem;
@@ -257,24 +278,32 @@ font-size: 1.2rem;
     font-size: 1.1rem;
 }
 
-#forma .btn{
-  background-color: var(--primary);
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
+#forma .btn {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
-#forma .btn:hover{
+
+#forma .btn:hover {
     background-color: var(--primary-darker);
 }
-#forma .btn:active{
+
+#forma .btn:active {
     transform: scale(0.98);
 }
 
-#contact-page iframe{
+#contact-page .section3 {
+    /* width: 100vw; */
+}
+#contact-page .map{
+    height: 100%;
+}
+#contact-page iframe {
     height: 100%;
     width: 100%;
-
 }
+
 /*CONTACT PAGE END*/
 
 /* footer section start */
@@ -325,4 +354,3 @@ font-size: 1.2rem;
         grid-template-columns: 1fr;
     }
 }
-

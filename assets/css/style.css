@@ -227,20 +227,22 @@ section {
 #contact-page {
     margin-top: 70px;
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         'section1 section2'
-} 
+        'section3 section3';
+}
 
-#constact-page .section1 {
+.section1 {
     grid-area: section1;
 }
 
-#constact-page .section2 {
+.section2 {
     grid-area: section2;
 }
 
-#constact-page .section3 {
-   width: 100vw;
+.section3 {
+    grid-area: section3;
 }
 
 /*contact phone*/
@@ -248,7 +250,8 @@ section {
     #contact-page {
         grid-template-areas:
             'section1'
-            'section2'    }
+            'section2'
+    }
 }
 
 #contact-page .contact-info {
@@ -293,12 +296,11 @@ section {
     transform: scale(0.98);
 }
 
-#contact-page .section3 {
-    /* width: 100vw; */
-}
-#contact-page .map{
+
+#contact-page .map {
     height: 100%;
 }
+
 #contact-page iframe {
     height: 100%;
     width: 100%;

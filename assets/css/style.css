@@ -55,7 +55,10 @@ section {
     padding: 2rem 2rem;
     overflow: hidden;
 }
-
+.title{
+    text-align: center;
+    padding: 1rem;
+}
 /* header section start */
 #header .logo {
     font-size: 2rem;
@@ -229,11 +232,15 @@ section {
     }
 }
 #contact-page .contact-info{
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #contact-page .contact-form{
-    padding:1rem 2rem;
+    padding:0 2rem;
 }
 
 #forma input{

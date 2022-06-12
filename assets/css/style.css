@@ -60,7 +60,9 @@ section {
     text-align: center;
     padding: 1rem;
 }
-
+.text-center{
+    text-align: center;
+}
 /* header section start */
 #header .logo {
     font-size: 2rem;

@@ -2,7 +2,11 @@ const year= new Date().getFullYear();
 document.getElementById('year').textContent=year;
 
 //phone-menu
-const phoneBtn=document.getElementById('phone-menu');
+const navbar=document.getElementById('navbar');
+const phoneBtn=document.getElementById('phone-menu').addEventListener('click', ()=>{
+  console.log("Sta da radim?")
+});
+
 
 
 //navbar

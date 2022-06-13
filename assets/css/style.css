@@ -163,7 +163,7 @@ section {
  }
  
     #header .phone-menu {
-        display: block;
+        display: flex;
     }
 
     #header .hero {

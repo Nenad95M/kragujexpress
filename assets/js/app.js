@@ -1,6 +1,10 @@
 const year= new Date().getFullYear();
 document.getElementById('year').textContent=year;
 
+//phone-menu
+const phoneBtn=document.getElementById('phone-menu');
+
+
 //navbar
 let pastScroll = window.pageYOffset;
 window.onscroll = function () {

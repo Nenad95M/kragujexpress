@@ -11,12 +11,12 @@ let active;
 phoneBtn.addEventListener('click',(e)=>{
   e.preventDefault();
   if(!active){
-  e.target.style.transform=' rotate(35deg)';
-  active=true;
+  e.target.style.transform='rotate(35deg)';
+ return active=true;
 }
-else{
-  e.target.style.transform=' rotate(0deg)';
-  active=false;
+if(active){
+  e.target.style.transform='rotate(0deg)';
+ return active=false;
 }
 }
 )

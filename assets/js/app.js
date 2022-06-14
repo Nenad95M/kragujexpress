@@ -38,5 +38,13 @@ window.onscroll = function () {
   pastScroll = newScroll;
 };
 
+//ovo fraca flex, sprecava da bude neprikazan meni nakon promene velicine ekrana na desktopu
+window.addEventListener("resize", () => {
+  const element = document.getElementById("vertical-menu");
+  if (window.innerWidth > 650) {
+    element.style.display = "none";
+  }
+});
+
 const godinePoslovanja= new Date().getFullYear() -1987;
 document.getElementById('godinePoslovanja').innerText=godinePoslovanja;

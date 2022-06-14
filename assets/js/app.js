@@ -11,7 +11,7 @@ let active;
 phoneBtn.addEventListener('click',(e)=>{
   e.preventDefault();
   if(!active){
-  e.target.style.transform='rotate(35deg)';
+  e.target.style.transform='rotate(90deg)';
  return active=true;
 }
 if(active){

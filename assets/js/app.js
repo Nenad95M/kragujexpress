@@ -22,17 +22,18 @@ if(active){
 }
 }
 )
-
 }
+
 phoneMenu();
 //navbar
 let pastScroll = window.pageYOffset;
+const navbar=document.getElementById("navbar");
 window.onscroll = function () {
   let newScroll = window.pageYOffset;
   if (pastScroll > newScroll) {
-    document.getElementById("navbar").style.top = "0";
+    navbar.style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-200px";
+    navbar.style.top = "-200px";
   }
   pastScroll = newScroll;
 };

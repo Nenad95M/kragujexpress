@@ -123,6 +123,8 @@ section {
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
+    gap: 1rem;
+    font-size: 1.5rem;
     display: none;
     flex-direction: column;
     align-items: center;

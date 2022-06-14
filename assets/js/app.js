@@ -3,8 +3,8 @@ document.getElementById('year').textContent=year;
 
 //phone-menu
 function phoneMenu(){
-const navbar=document.getElementById('navbar');
 const phoneBtn=document.getElementById('phone-menu');
+const verticalMenu=document.getElementById('vertical-menu');
 
 let active;
 
@@ -12,17 +12,17 @@ phoneBtn.addEventListener('click',(e)=>{
   e.preventDefault();
   if(!active){
   e.target.style.transform='rotate(90deg)';
+  verticalMenu.style.display='flex';
  return active=true;
 }
 if(active){
   e.target.style.transform='rotate(0deg)';
+  verticalMenu.style.display='none';
  return active=false;
 }
 }
 )
-if (active){
 
-}
 }
 phoneMenu();
 //navbar

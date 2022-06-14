@@ -28,12 +28,16 @@ phoneMenu();
 //navbar
 let pastScroll = window.pageYOffset;
 const navbar=document.getElementById("navbar");
+const phoneNavbar=document.getElementById('vertical-menu');
 window.onscroll = function () {
   let newScroll = window.pageYOffset;
   if (pastScroll > newScroll) {
     navbar.style.top = "0";
+    phoneNavbar.style.top='0';
   } else {
     navbar.style.top = "-200px";
+    phoneNavbar.style.top='-1000px';
+
   }
   pastScroll = newScroll;
 };

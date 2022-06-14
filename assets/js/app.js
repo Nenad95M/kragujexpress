@@ -2,13 +2,29 @@ const year= new Date().getFullYear();
 document.getElementById('year').textContent=year;
 
 //phone-menu
+function phoneMenu(){
 const navbar=document.getElementById('navbar');
-const phoneBtn=document.getElementById('phone-menu').addEventListener('click', ()=>{
-  console.log("Sta da radim?")
-});
+const phoneBtn=document.getElementById('phone-menu');
 
+let active;
 
+phoneBtn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  if(!active){
+  e.target.style.transform=' rotate(35deg)';
+  active=true;
+}
+else{
+  e.target.style.transform=' rotate(0deg)';
+  active=false;
+}
+}
+)
+if (active){
 
+}
+}
+phoneMenu();
 //navbar
 let pastScroll = window.pageYOffset;
 window.onscroll = function () {

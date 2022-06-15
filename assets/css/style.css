@@ -369,7 +369,11 @@ section {
     height: 100%;
     width: 100%;
 }
-
+@media(max-width: 768px) {
+    #contact-page .map{
+        min-height: 320px;
+    }
+}
 /*CONTACT PAGE END*/
 
 /* footer section start */

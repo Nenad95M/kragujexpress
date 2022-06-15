@@ -116,7 +116,7 @@ section {
     display: none;
 }
 
- #vertical-menu {
+#vertical-menu {
     background-color: var(--primary);
     color: #fff;
     position: fixed;
@@ -243,87 +243,107 @@ section {
 /*about section end*/
 
 /* TABLE */
-#table .tabela{
+#table .tabela {
     width: 100%;
     text-align: center;
 }
-#table .tabela td, #table .tabela th:first-child{
+
+#table .tabela td,
+#table .tabela th:first-child {
     font-size: 1em;
     width: 15%;
     background-color: var(--secondary);
-   color: #fff;
+    color: #fff;
 }
 
-#table .tabela td, #table .tabela th:last-child{
+#table .tabela td,
+#table .tabela th:last-child {
     font-size: 1em;
     width: 15%;
     background-color: var(--primary);
-   color: #fff;
+    color: #fff;
 }
 
-#table .tabela tr td:last-child{
+#table .tabela tr td:last-child {
     background-color: var(--secondary);
 
     color: #fff;
 }
-#table .tabela tr td:first-child{
+
+#table .tabela tr td:first-child {
     background-color: var(--primary);
 
     color: #fff;
 }
-#table .tabela tr td:first-child:hover{
+
+#table .tabela tr td:first-child:hover {
     background-color: var(--secondary);
 
 }
-#table .tabela tr td:last-child:hover{
+
+#table .tabela tr td:last-child:hover {
     background-color: var(--primary);
 
 }
+
 /* RENT BUSS SECTION */
-#buss-section{
+#buss-section {
     margin-top: 70px;
 }
 
-#buss-section .rent-buss-text{
-padding: 1rem 2rem;
+#buss-section .rent-buss-text {
+    padding: 1rem 2rem;
 }
-#buss-section img{
+
+#buss-section img {
     width: 100%;
     height: 100%;
 }
-#buss-section .grid{
+
+#buss-section .grid {
     display: grid;
     grid-template-columns: auto auto;
     gap: 1rem;
 }
-#buss-section .grid .grid-element{
+
+#buss-section .grid .grid-element {
     background-color: var(--primary);
     color: #fff;
     padding: 0 0 1rem 0;
     text-align: center;
 }
-#buss-section .grid .grid-element:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;};
-#buss-section .grid .grid-element h3{
+
+#buss-section .grid .grid-element:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+;
+
+#buss-section .grid .grid-element h3 {
     margin-bottom: 1rem;
 }
-#buss-section .bus-card-btn{
-background-color: #fff;
-color: var(--dark);
-display: inline-block;
-padding: 0.25rem 1re;
-width: 90%;
-border-radius: 5px;
+
+#buss-section .bus-card-btn {
+    background-color: #fff;
+    color: var(--dark);
+    display: inline-block;
+    padding: 0.25rem 1re;
+    width: 90%;
+    border-radius: 5px;
 
 }
-#buss-section .bus-card-btn:hover{
+
+#buss-section .bus-card-btn:hover {
     background-color: rgb(225, 217, 217);
-  
-    }
+
+}
+
 @media(max-width: 768px) {
-    #buss-section .grid{
+    #buss-section .grid {
         grid-template-columns: auto;
-    }}
+    }
+}
+
 /* CONTACT SECTION */
 #contact-page {
     margin-top: 70px;
@@ -414,18 +434,21 @@ border-radius: 5px;
     height: 100%;
     width: 100%;
 }
+
 @media(max-width: 768px) {
-    #contact-page .map{
+    #contact-page .map {
         min-height: 320px;
     }
 }
+
 /*CONTACT PAGE END*/
 
 /* footer section start */
 
-#footer{
+#footer {
     padding: 2rem;
 }
+
 #footer a {
     color: var(--dark);
 }
@@ -475,31 +498,36 @@ border-radius: 5px;
 
 /*PROBA ZA SLIKE*/
 /*cela pozadina je sada tamna*/
-#lightboxBg{
+#lightboxBg {
     position: fixed;
     z-index: 150;
     top: 0px;
     background-color: rgba(150, 150, 150, 0.6);
     backdrop-filter: blur(2px);
     display: none;
- 
+    min-height: 100vh;
+    min-width: 100vw;
 
 }
-#lightboxBg.active{
-    min-height: 100vh ;
-display: flex;
-justify-content: center;
-align-items: center;
+
+#lightboxBg.active {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#lightboxImg{
-    max-width: 80%;
-    max-height: 80%;
+
+#lightboxImg {
+    max-width: 60%;
+    max-height: 60%;
 
 }
+
 @media(max-width: 768px) {
-    #lightboxImg{
+    #lightboxImg {
         max-width: 100%;
         max-height: 100%;
-    
+
     }
 }

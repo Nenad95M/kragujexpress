@@ -19,10 +19,8 @@ if(active){
   e.target.style.transform='rotate(0deg)';
   verticalMenu.style.display='none';
  return active=false;
-}
-}
-)
-}
+}}
+)}
 
 phoneMenu();
 //navbar
@@ -42,13 +40,13 @@ window.onscroll = function () {
   pastScroll = newScroll;
 };
 
-//ovo fraca flex, sprecava da bude neprikazan meni nakon promene velicine ekrana na desktopu
+//Gasimo vertikalni meni prilikom promene velicine ekrana
 window.addEventListener("resize", () => {
   const element = document.getElementById("vertical-menu");
   if (window.innerWidth > 650) {
     element.style.display = "none";
   }
 });
-
+//prikazujemo za prikaz godina poslovanja firme
 const godinePoslovanja= new Date().getFullYear() -1987;
 document.getElementById('godinePoslovanja').innerText=godinePoslovanja;

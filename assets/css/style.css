@@ -326,6 +326,8 @@ section {
 #buss-section .bus-card-btn {
     background-color: #fff;
     color: var(--dark);
+    transition: all 0.5s;
+
     display: inline-block;
     padding: 0.25rem 1re;
     width: 90%;
@@ -334,8 +336,8 @@ section {
 }
 
 #buss-section .bus-card-btn:hover {
-    background-color: rgb(225, 217, 217);
-
+    background-color: var(--secondary);
+    color: #fff;
 }
 
 @media(max-width: 768px) {

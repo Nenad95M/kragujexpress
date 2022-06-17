@@ -359,9 +359,8 @@ section {
 
 }
 
-#buss-section .bus-card-btn:hover {
-    background-color: var(--secondary);
-    color: #fff;
+#buss-section .bus-card-btn:hover,#buss-section .bus-card-btn:active  {
+    transform:  scale(0.98);
 }
 
 @media(max-width: 768px) {

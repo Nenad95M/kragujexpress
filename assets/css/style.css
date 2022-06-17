@@ -1,10 +1,15 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');:root {
+    /* colors */
     --primary: #28a745;
     --primary-darker: #41ac3f;
     --dark: #005800;
     --secondary: #0284d0;
     --max-width: 1100px;
+/*fonts*/
+    --font2: 'Roboto', sans-serif;
+    --font5: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
+
 
 /* Reset */
 * {
@@ -14,7 +19,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: var(--font2);
     line-height: 1.6;
     font-size: 1.2rem;
 }
@@ -103,6 +109,7 @@ section {
 }
 
 #header .hero {
+    font-family: var(--font5);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -219,6 +226,18 @@ section {
 }
 
 /*gallery section end*/
+
+/* Partners section start */
+#partners .grid-brand{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+
 
 /*about section start*/
 #about {

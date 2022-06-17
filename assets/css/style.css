@@ -254,6 +254,7 @@ section {
 }
 
 #about .logo {
+    padding-top: 2rem;
     max-width: 400px;
     margin: auto;
 }
@@ -483,6 +484,7 @@ section {
 }
 
 #footer .footer-grid {
+    border-top: 1px solid var(--dark);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }

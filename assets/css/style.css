@@ -239,7 +239,17 @@ section {
 
 @media(max-width: 768px) {
     #partners .grid-brand{
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        gap: 0.2rem;
+        padding-top: 0.1rem;
+
+    }
+    #partners .brand{
+        width: 90%;
+        margin: auto;
+
     }
 }
 

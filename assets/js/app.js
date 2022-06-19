@@ -1,5 +1,12 @@
+function years(){
 const year= new Date().getFullYear();
 document.getElementById('year').textContent=year;
+
+//prikazujemo za prikaz godina poslovanja firme
+const godinePoslovanja= year -1987;
+document.getElementById('godinePoslovanja').innerText=godinePoslovanja;
+}
+years();
 
 //phone-menu
 function phoneMenu(){
@@ -23,7 +30,10 @@ if(active){
 )}
 
 phoneMenu();
+
 //navbar
+
+(()=>{
 let pastScroll = window.pageYOffset;
 const navbar=document.getElementById("navbar");
 const phoneNavbar=document.getElementById('vertical-menu');
@@ -39,14 +49,15 @@ window.onscroll = function () {
   }
   pastScroll = newScroll;
 };
+})();
 
 //Gasimo vertikalni meni prilikom promene velicine ekrana
+(()=>{
 window.addEventListener("resize", () => {
   const element = document.getElementById("vertical-menu");
   if (window.innerWidth > 650) {
     element.style.display = "none";
   }
-});
-//prikazujemo za prikaz godina poslovanja firme
-const godinePoslovanja= new Date().getFullYear() -1987;
-document.getElementById('godinePoslovanja').innerText=godinePoslovanja;
+});})();
+
+

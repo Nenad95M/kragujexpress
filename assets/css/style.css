@@ -118,7 +118,7 @@ section {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background: url(../img/kotor.jpg) no-repeat center center/cover;
+    background: url(../img/kotor.webp) no-repeat center center/cover;
 }
 
 #header .phone-menu {
@@ -193,7 +193,7 @@ section {
     }
 
     #header .hero {
-        background: url(../img/budva.jpg) no-repeat center center/cover;
+        background: url(../img/budva.webp) no-repeat center center/cover;
     }
 
     #header .button-holder {

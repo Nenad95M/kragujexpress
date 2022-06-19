@@ -1,3 +1,4 @@
+(()=>{
 const lightboxBg=document.createElement('div');
 lightboxBg.id="lightboxBg";
 document.body.appendChild(lightboxBg);
@@ -26,4 +27,4 @@ lightboxBg.addEventListener('click', (e)=>{
  if(lightboxBg.firstChild){
     lightboxBg.removeChild(lightboxBg.firstChild);
 }
-})
+})})();

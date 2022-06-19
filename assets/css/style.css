@@ -406,7 +406,29 @@ section {
         grid-template-columns: auto;
     }
 }
-
+/*BUS PRESENTATION*/
+#bus-presentation{
+margin-top: 70px;
+}
+#bus-presentation .cards {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 1.2rem;
+    padding-top: 1rem;
+  }
+  #bus-presentation .cards .card{
+    text-align: center;
+  }
+  #bus-presentation .cards i{
+    color: var(--primary);
+    padding: 1rem;
+  }
+  @media(max-width: 768px) {
+ 
+    #bus-presentation .cards{
+        grid-template-columns: auto;
+    }
+}
 /* CONTACT SECTION */
 #contact-page {
     margin-top: 70px;

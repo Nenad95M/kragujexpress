@@ -457,7 +457,12 @@ section {
 #contact-page .contact-form {
     padding: 0 2rem;
 }
-
+#forma .form-group{
+    text-align: center;
+}
+#forma .form-group label{
+color: var(--primary);
+}
 #forma input {
     width: 100%;
     padding: 0.5rem;
@@ -478,6 +483,9 @@ section {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+   width: 30%;
 }
 
 #forma .btn:hover {

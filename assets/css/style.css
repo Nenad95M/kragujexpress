@@ -491,7 +491,9 @@ section {
 #bus-slider .secondary-img :hover {
     transform: scale(1.2);
 }
-
+#bus-slider .carouselBtn{
+    display: none;
+}
 /*bus slider phone*/
 @media(max-width: 768px) {
     #bus-slider .secondary-img {
@@ -510,6 +512,19 @@ section {
     #bus-slider .main-img .fa-arrow-circle-right {
         visibility: hidden;
     }
+    #bus-slider .carouselBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #bus-slider .carouselBtn button{
+        padding: 0.25rem 1rem;
+        text-align: center;
+        width: 40%;
+        border-radius: 5px;
+        border: none;
+    }
+   
 }
 
 /* CONTACT SECTION */

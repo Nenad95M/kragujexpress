@@ -429,6 +429,31 @@ margin-top: 70px;
         grid-template-columns: auto;
     }
 }
+#bus-slider .main-img{
+    max-width: 40%;
+    margin: auto;
+    position: relative;
+}
+#bus-slider .main-img .fa-arrow-left {
+  position: absolute;
+  top: 50%;
+  left: -100px;
+}
+#bus-slider .main-img .fa-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+  }
+#bus-slider .secondary-img{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 1rem;
+max-width: 60%;
+margin: auto;
+}
+#bus-slider .secondary-img img:hover{
+    transform: scale(1.2);
+}
 /* CONTACT SECTION */
 #contact-page {
     margin-top: 70px;

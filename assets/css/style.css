@@ -45,6 +45,8 @@ ul {
 
 img {
     width: 100%;
+    -webkit-user-drag: none;
+
 }
 
 .text-primary {

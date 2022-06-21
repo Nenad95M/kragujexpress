@@ -5,6 +5,10 @@ const photos = document.querySelectorAll('[data-img]');
 let currentPhoto = 0;
 let maxIteration = photos.length - 1;
 
+mainImg.addEventListener('touchstart',(e)=>{
+    console.log(e)
+})
+
 photos.forEach((photo, index) => {
     photo.addEventListener('click', () => {
         mainImg.src = photo.src;

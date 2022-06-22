@@ -14,19 +14,16 @@ mainImg.addEventListener('touchmove',(e)=>{
 function removeActive (e){
     e.forEach(element => {
         element.classList.remove('active');   
-        console.log(e)     
     });
 }
 function addActive(e, i){
     e[i].classList.add('active');
-    console.log('add');
 }
 
 photos.forEach((photo, index) => {
     photo.addEventListener('click', () => {
         mainImg.src = photo.src;
         currentPhoto = index;
-        console.log(currentPhoto);
         removeActive(circles);
         addActive(circles, currentPhoto);
         return currentPhoto = index;
@@ -38,7 +35,6 @@ prev.forEach(button => {
         currentPhoto = currentPhoto - 1;
         if (currentPhoto <= 0) {
             currentPhoto = 0;
-            console.log(currentPhoto);
         }
         mainImg.src = photos[currentPhoto].src;
         removeActive(circles);
@@ -51,7 +47,6 @@ next.forEach(button => {
         currentPhoto = currentPhoto + 1;
         if (currentPhoto >= maxIteration) {
             currentPhoto = maxIteration;
-            console.log(currentPhoto);
         }
        
         mainImg.src = photos[currentPhoto].src;

@@ -54,24 +54,25 @@
 
         <section class="section2 contact-form">
             <h2 class="title text-primary">Imate poruku?</h2>
-            <form id="forma" action="javascript:void()" method="post">
+            <form id="forma" action="https://formsubmit.co/ajax/f8bafe5f11a25d2253a4a8ddae1ac614" method="post">
                 <div class="form-group">
                     <label class="label" for="name">Ime</label>
-                    <input maxlength="50" id="name" name="name" type="text">
+                    <input maxlength="50" id="name" name="ime" type="text">
                 </div>
                 <div class="form-group">
                     <label class="label" for="email">Mejl</label>
-                    <input maxlength="50" id="email" name="email" type="email">
+                    <input maxlength="50" id="email" name="mejl" type="email">
                 </div>
                 <div class="form-group">
                     <label class="label" for="subject">Tema</label>
-                    <input maxlength="50" id="fName" name="fName" type="text">
+                    <input maxlength="50" id="fName" name="tema" type="text">
                 </div>
                 <div class="form-group">
-                <textarea maxlength="320" name="message" class="message"></textarea>
-            </div>
+                    <textarea maxlength="320" name="poruka" class="message"></textarea>
+                </div>
                 <div class="form-group">
                     <input class="btn" type="submit" value="Pošalji">
+                    <input type="text" name="_honey" style="display:none">
                 </div>
             </form>
         </section>
@@ -124,7 +125,7 @@
         <div class="copyright-info">&copy; <span id="year"></span> Kragujexpress, Kragujevac</div>
     </footer>
     <script defer src="assets/js/app.js"></script>
-
+    <script src="assets/js/form.js"></script>
 </body>
 
 </html>

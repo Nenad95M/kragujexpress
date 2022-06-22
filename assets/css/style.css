@@ -449,9 +449,9 @@ section {
         grid-template-columns: auto;
     }
 }
-
+/* BUS SLIDER */
 #bus-slider .main-img {
-    max-width: 42%;
+    max-width: 40%;
     margin: auto;
     position: relative;
 }
@@ -484,7 +484,7 @@ section {
     grid-template-columns: repeat(4, 1fr);
 
     gap: 1rem;
-    max-width: 60%;
+    max-width: 50%;
     margin: auto;
 }
 
@@ -530,6 +530,8 @@ section {
     }
    
 }
+/* END OF BUS SLIDER PHONE */
+
 .progress-container {
     display: flex;
     justify-content: center;

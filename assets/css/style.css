@@ -530,6 +530,31 @@ section {
     }
    
 }
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 3px;
+}
+
+.circle{
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    width: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+    border: 3px solid var(--line-border-empty);
+}
+.circle.active{
+background-color: var(--primary);
+color: #fff;
+}
 
 /* CONTACT SECTION */
 #contact-page {

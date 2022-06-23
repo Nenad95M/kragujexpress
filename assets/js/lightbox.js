@@ -1,5 +1,9 @@
 (()=>{
 const images=Array.from (document.getElementById('buss-gallery').querySelectorAll('img'));
+const requiredFormInputs = Array.from(
+    document.getElementsByClassName("required")
+  );
+  
 const modalPhoto=document.getElementById('modalPhoto');
 const next=document.getElementById('next');
 const prev=document.getElementById('prev');

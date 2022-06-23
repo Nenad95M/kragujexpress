@@ -190,6 +190,7 @@ section {
         font-size: 2rem;
     }
 }
+
 @media(max-width: 853px) {
     #header .desktop-menu {
         display: none !important;
@@ -199,6 +200,7 @@ section {
         display: flex;
     }
 }
+
 @media(max-width: 768px) {
     #header .desktop-menu {
         display: none !important;
@@ -233,7 +235,7 @@ section {
 
 #buss-gallery .gallery img:hover {
     opacity: 0.9;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 /*gallery phone*/
@@ -458,6 +460,7 @@ section {
         grid-template-columns: auto;
     }
 }
+
 /* BUS SLIDER */
 #bus-slider .main-img {
     max-width: 40%;
@@ -503,10 +506,13 @@ section {
 
 #bus-slider .secondary-img :hover {
     transform: scale(1.2);
+    cursor: zoom-in;
 }
-#bus-slider .carouselBtn{
+
+#bus-slider .carouselBtn {
     display: none;
 }
+
 /*bus slider phone*/
 @media(max-width: 768px) {
     #bus-slider .secondary-img {
@@ -525,21 +531,24 @@ section {
     #bus-slider .main-img .fa-arrow-circle-right {
         visibility: hidden;
     }
-    #bus-slider .carouselBtn{
+
+    #bus-slider .carouselBtn {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    #bus-slider .carouselBtn button{
+
+    #bus-slider .carouselBtn button {
         padding: 0.4rem 1rem;
-        color:var(--dark);
+        color: var(--dark);
         width: 40%;
         border-radius: 5px;
         border: none;
         margin-top: 10px;
     }
-   
+
 }
+
 /* END OF BUS SLIDER PHONE */
 
 .progress-container {
@@ -551,7 +560,7 @@ section {
     margin-bottom: 3px;
 }
 
-.circle{
+.circle {
     background-color: #fff;
     color: #999;
     border-radius: 50%;
@@ -564,9 +573,10 @@ section {
     transition: 0.4s ease;
     border: 3px solid var(--line-border-empty);
 }
-.circle.active{
-background-color: var(--primary);
-color: #fff;
+
+.circle.active {
+    background-color: var(--primary);
+    color: #fff;
 }
 
 /* CONTACT SECTION */
@@ -736,35 +746,63 @@ color: #fff;
 /*PROBA ZA SLIKE*/
 /*cela pozadina je sada tamna*/
 #lightboxBg {
+    display: none;
     position: fixed;
     z-index: 150;
     top: 0px;
-    background-color: rgba(150, 150, 150, 0.6);
+    background-color: rgba(150, 150, 150, 0.8);
     backdrop-filter: blur(2px);
-    display: none;
-    min-height: 100vh;
-    min-width: 100vw;
-
-}
-
-#lightboxBg.active {
-
-
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#lightboxBg.active{
+    display: flex;
 }
 
 #lightboxImg {
     max-width: 60%;
     max-height: 60%;
-
+    position: relative;
+    color: #fff;
 }
-
+#lightboxImg .fa-x{
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    color: #fff;
+}
+#lightboxImg .fa-x:hover{
+ cursor: pointer;
+}
+#lightboxImg .fa-arrow-circle-right{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    cursor: pointer;
+}
+#lightboxImg .fa-arrow-circle-left{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    cursor: pointer;
+}
 @media(max-width: 768px) {
     #lightboxImg {
         max-width: 100%;
         max-height: 100%;
-
+    }
+    #lightboxImg .fa-arrow-circle-right{
+        right: 5px;
+    }
+    #lightboxImg .fa-arrow-circle-left{
+        left: 5px;
+       
+    }
+    #lightboxImg .fa-x{
+    right: 0;
+    color: var(--primary);
     }
 }

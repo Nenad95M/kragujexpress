@@ -1,30 +1,50 @@
 (()=>{
-const lightboxBg=document.createElement('div');
-lightboxBg.id="lightboxBg";
-document.body.appendChild(lightboxBg);
-
 const images=Array.from (document.getElementById('buss-gallery').querySelectorAll('img'));
-images.forEach(image => {
+const modalPhoto=document.getElementById('modalPhoto');
+const next=document.getElementById('next');
+const prev=document.getElementById('prev');
+const close=document.getElementById('close');
+
+let currentPhoto = 0;
+let maxIteration = images.length - 1;
+
+
+images.forEach((image, i) => {
 image.addEventListener('click', (e)=>{
-    console.log("?")
+    currentPhoto=i;
     //prilikom klika, dodajemo active klasu koja u css-u daje flex umesto display-none
     lightboxBg.classList.add('active');
     //pravimo privremeni modal element img, dajemo mu sliku koju ima ona na koju smo kliknuli
-    const lightboxImg=document.createElement('img');
-    lightboxImg.src=image.src;
+    modalPhoto.src=image.src;
     //dodajemo mu id gde smo uredili izgled modala u css-u
-    lightboxImg.id="lightboxImg";
-   
-    //postavljamo napravljeni element kao dete
-    lightboxBg.appendChild(lightboxImg);
+    console.log(currentPhoto);
 });
 });
 
+    prev.addEventListener('click', () => {
+        currentPhoto = currentPhoto - 1;
+        if (currentPhoto <= 0) {
+            currentPhoto = 0;
+        }
+        modalPhoto.src = images[currentPhoto].src;
+      
+    })
+
+    next.addEventListener('click', () => {
+        currentPhoto = currentPhoto + 1;
+        if (currentPhoto >= maxIteration) {
+            currentPhoto = maxIteration;
+        }
+        modalPhoto.src = images[currentPhoto].src;
+
+    })
+
+
+
 //uklanjam active klasu kada se klikne bilo gde na pozadinu
-lightboxBg.addEventListener('click', (e)=>{
+close.addEventListener('click', (e)=>{
     lightboxBg.classList.remove('active');
- //ako prethodna slika postoji, uklanjamo je 
- if(lightboxBg.firstChild){
-    lightboxBg.removeChild(lightboxBg.firstChild);
 }
-})})();
+
+
+)})();

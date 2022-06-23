@@ -321,7 +321,10 @@ section {
     background-color: var(--secondary);
     color: #fff;
 }
-
+#table .text-warning{
+    padding-top: 2rem;
+    font-style: italic;
+}
 /* #table .tabela td,
 #table .tabela th:first-child {
     font-size: 1em;

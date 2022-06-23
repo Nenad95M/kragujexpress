@@ -155,11 +155,14 @@ section {
 
 #header .hero-content {
     color: #fff;
-    font-size: 1rem;
 }
 
 #header .hero-content h1 {
     font-weight: 900;
+}
+
+#header .hero-content h2 {
+    font-weight: 200;
 }
 
 #header .button-holder {
@@ -762,7 +765,8 @@ section {
     min-height: 100vh;
     min-width: 100vw;
 }
-#lightboxBg.active{
+
+#lightboxBg.active {
     display: flex;
 }
 
@@ -772,41 +776,51 @@ section {
     position: relative;
     color: #fff;
 }
-#lightboxImg .fa-x{
+
+#lightboxImg .fa-x {
     position: absolute;
     top: 10px;
     right: -30px;
     color: #fff;
 }
-#lightboxImg .fa-x:hover{
- cursor: pointer;
+
+#lightboxImg .fa-x:hover {
+    cursor: pointer;
 }
-#lightboxImg .fa-arrow-circle-right{
+
+#lightboxImg .fa-arrow-circle-right {
     position: absolute;
     right: -50px;
     top: 50%;
     cursor: pointer;
 }
-#lightboxImg .fa-arrow-circle-left{
+
+#lightboxImg .fa-arrow-circle-left {
     position: absolute;
     left: -50px;
     top: 50%;
     cursor: pointer;
 }
+
 @media(max-width: 768px) {
     #lightboxImg {
         max-width: 100%;
         max-height: 100%;
     }
-    #lightboxImg .fa-arrow-circle-right{
+
+    #lightboxImg .fa-arrow-circle-right {
         right: 5px;
     }
-    #lightboxImg .fa-arrow-circle-left{
+
+    #lightboxImg .fa-arrow-circle-left {
         left: 5px;
-       
+
     }
-    #lightboxImg .fa-x{
-    right: 0;
-    color: var(--primary);
+
+    #lightboxImg .fa-x {
+        top: -15px;
+        right: 5px;
+
+
     }
 }

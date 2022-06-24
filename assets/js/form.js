@@ -1,6 +1,15 @@
 (()=>{
 
 const forma=document.getElementById('forma');
+const notification=document.getElementById('successMessage');
+
+function showMessage(res){
+
+if(res==='true'){
+  notification.classList.remove('none');
+  setTimeout(()=>{notification.classList.add('none')}, 2000);
+}
+}
 
 forma.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -11,7 +20,7 @@ forma.addEventListener('submit',(e)=>{
 
 
   requiredFormInputs.forEach((element) => {
-    if (element.value.trim() === ""|| element.value.trim.length < 2) {
+    if (element.value.trim() === "") {
       element.placeholder = "Morate popuniti ovo polje!";
       element.style.border="3px solid red";
     }
@@ -33,10 +42,10 @@ fetch("https://formsubmit.co/ajax/f8bafe5f11a25d2253a4a8ddae1ac614", {
     })
 }
 
-
 )
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data =>
+       showMessage(data.success))
     .catch(error => console.log(error));
 
 

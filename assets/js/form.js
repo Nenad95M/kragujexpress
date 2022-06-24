@@ -3,8 +3,7 @@
   const forma = document.getElementById('forma');
   const notification = document.getElementById('successMessage');
   //niz od svih korisnickih unosa
-  const requiredFormInputs = document.getElementsByClassName("required");
-
+  const requiredFormInputs =Array.from(document.getElementsByClassName("required"));
 
   forma.addEventListener('submit', (e) => {
 
@@ -13,16 +12,18 @@
     if (formValidation()) {
       sendMessage();
     }
-
-    //iteracija kroz sve unose kako bi se proverilo da nisu prazni
-    function formValidation() {
+  
+     //iteracija kroz sve unose kako bi se proverilo da nisu prazni
+     function formValidation() {
       for (const input of requiredFormInputs) {
         if (input.value.trim() === "") {
           input.placeholder = "Morate popuniti ovo polje!";
           input.style.border = "3px solid red";
+          return false;
         }
-       
       }
+      return true;
+
     }
 
     //Ako dobijemo odgovor sa sajta o uspesnosti slanja poruke,

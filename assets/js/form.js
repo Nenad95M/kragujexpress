@@ -64,6 +64,8 @@
       )
         .then(response => response.json())
         .then(data =>
+          //moja funkcija koja obavestava korisnika o uspesnosti slanja
+          //kao argument uzima poruku sa servera 
           showMessage(data.success))
         .catch(error => console.log(error));
     }

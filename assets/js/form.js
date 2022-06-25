@@ -4,6 +4,7 @@
   const notification = document.getElementById('successMessage');
   //niz od svih korisnickih unosa
   const requiredFormInputs =Array.from(document.getElementsByClassName("required"));
+  const warningClass='warning';
 
   forma.addEventListener('submit', (e) => {
 
@@ -18,7 +19,7 @@
       for (const input of requiredFormInputs) {
         if (input.value.trim() === "") {
           input.placeholder = "Morate popuniti ovo polje!";
-          input.style.border = "3px solid red";
+          input.classList.add(warningClass);
           return false;
         }
       }
@@ -33,6 +34,12 @@
       if (res === 'true') {
         notification.classList.remove('none');
         setTimeout(() => { notification.classList.add('none') }, 2000);
+        for (const input of requiredFormInputs) {
+          if(input.classList.contains(warningClass))
+            input.placeholder = "";
+            input.classList.remove(warningClass);
+            input.value=null;
+        }
       }
     }
     //funckija koja salje poruku

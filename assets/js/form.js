@@ -35,11 +35,13 @@
         notification.classList.remove('none');
         setTimeout(() => { notification.classList.add('none') }, 2000);
         for (const input of requiredFormInputs) {
-          if(input.classList.contains(warningClass))
+          if(input.classList.contains(warningClass)){
             input.placeholder = "";
             input.classList.remove(warningClass);
+          }
             input.value=null;
         }
+
       }
     }
     //funckija koja salje poruku

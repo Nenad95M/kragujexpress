@@ -28,7 +28,7 @@ image.addEventListener('click', (e)=>{
     prev.addEventListener('click', () => {
         currentPhoto = currentPhoto - 1;
         if (currentPhoto <= 0) {
-            currentPhoto = 0;
+            currentPhoto = maxIteration;
         }
         modalPhoto.src = images[currentPhoto].src;
       
@@ -37,7 +37,7 @@ image.addEventListener('click', (e)=>{
     next.addEventListener('click', () => {
         currentPhoto = currentPhoto + 1;
         if (currentPhoto >= maxIteration) {
-            currentPhoto = maxIteration;
+            currentPhoto = 0;
         }
         modalPhoto.src = images[currentPhoto].src;
 

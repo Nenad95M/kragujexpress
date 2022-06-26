@@ -267,6 +267,8 @@ section {
 }
 #partners .grid-brand .brand{
     max-width: 300px;
+    display: grid;
+    align-items: center;
    
 }
 @media(max-width: 768px) {

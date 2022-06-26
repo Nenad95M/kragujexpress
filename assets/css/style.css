@@ -266,7 +266,7 @@ section {
     padding-top: 1rem;
 }
 #partners .grid-brand .brand{
-    max-width: 300px;
+    max-height:130px ;
     display: grid;
     align-items: center;
    

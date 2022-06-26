@@ -269,7 +269,9 @@ section {
     max-height:130px ;
     display: grid;
     align-items: center;
-   
+}
+#partners .grid-brand .brand img:hover{
+    transform: scale(1.1);
 }
 @media(max-width: 768px) {
     #partners .grid-brand {

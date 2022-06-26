@@ -275,11 +275,10 @@ section {
 }
 @media(max-width: 768px) {
     #partners .grid-brand {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-content: center;
         gap: 0.5rem;
-        padding-top: 0.1rem;
 
     }
 

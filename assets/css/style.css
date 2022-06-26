@@ -261,7 +261,7 @@ section {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding-top: 1rem;
 }
@@ -273,7 +273,7 @@ section {
 }
 @media(max-width: 768px) {
     #partners .grid-brand {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-content: center;
         gap: 0.2rem;
@@ -282,7 +282,7 @@ section {
     }
 
     #partners .brand {
-        width: 90%;
+        width: 100%;
         margin: auto;
 
     }

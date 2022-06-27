@@ -311,6 +311,23 @@ section {
 }
 
 /*about section end*/
+#red-voznje{
+    margin-top: 70px;
+}
+#red-voznje .table-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 768px) {
+    #red-voznje .table-grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
 
 /* TABLE */
 #table .tabela {

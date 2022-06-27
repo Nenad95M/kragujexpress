@@ -315,7 +315,7 @@ section {
 /* TABLE */
 #table .tabela {
     width: 100%;
-    text-align: center;
+    margin-top: 1rem;
 }
 
 #table .tabela td {
@@ -335,43 +335,6 @@ section {
     font-style: italic;
 }
 
-/* #table .tabela td,
-#table .tabela th:first-child {
-    font-size: 1em;
-    width: 15%;
-    background-color: var(--secondary);
-    color: #fff;
-}
-
-#table .tabela td,
-#table .tabela th:last-child {
-    font-size: 1em;
-    width: 15%;
-    background-color: var(--primary);
-    color: #fff;
-} */
-
-/* #table .tabela tr td:last-child {
-    background-color: var(--secondary);
-
-    color: #fff;
-}
-
-#table .tabela tr td:first-child {
-    background-color: var(--primary);
-
-    color: #fff;
-}
-
-#table .tabela tr td:first-child:hover {
-    background-color: var(--secondary);
-
-}
-
-#table .tabela tr td:last-child:hover {
-    background-color: var(--primary);
-
-} */
 
 /* RENT BUSS SECTION */
 #buss-section {

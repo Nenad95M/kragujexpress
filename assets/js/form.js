@@ -55,10 +55,10 @@
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          name: fName.value,
+          ime: fName.value,
           email: fEmail.value,
-          subject: fPhone.value,
-          message: fMessage.value
+          telefon: fPhone.value,
+          poruka: fMessage.value
         })
       }
       )

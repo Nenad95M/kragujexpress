@@ -770,7 +770,29 @@ display: none;
     }
 }
 
+/*ERROR 404*/
+#error-message{
+    margin-top: 70px;
 
+}
+#error-message .message{
+    min-height: 80vh;
+
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#error-message .message i{
+    color: red;
+}
+#error-message .btn{
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-darker);
+    color: #fff;
+}
 /*PROBA ZA SLIKE*/
 /*cela pozadina je sada tamna*/
 #lightboxBg {

@@ -30,98 +30,44 @@
   gtag('config', 'G-4XYND6ELZH');
 </script>
 <style>
+/*ERROR 404*/
+#error-message{
 
+}
+#error-message .message{
+    min-height: 80vh;
+
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#error-message .message i{
+    color: red;
+}
+#error-message .btn{
+    padding: 0.5rem 1rem;
+    background-color:#41ac3f;
+    color: #fff;
+}
 </style>
 </head>
 
 <body>
 
 
-    <header id="header">
-        <nav id="navbar" class="navbar">
-            <a href="/">
-                <div class="logo">Kragujexpress</div>
-            </a>
-
-            <ul class="desktop-menu">
-                <li><a href="index.html">Početna</a> </li>
-                <li><a href="red-voznje-kragujexpress.html"> Red vožnje</a> </li>
-                <li><a href="iznajmljivanje-autobusa-kragujexpress.html"> Iznajmi bus</a> </li>
-                <li><a href="onama.html"> O nama</a> </li>
-                <li><a href="kontakt.html"> Kontakt</a> </li>
-            </ul>
-            <a href="#" id="phone-menu" class="phone-menu"><i class="fa-solid fa-bars fa-xl	"></i>
-            </a>
-
-        </nav>
-        <ul id="vertical-menu">
-            <li><a href="index.html">Početna</a> </li>
-            <li><a href="red-voznje-kragujexpress.html"> Red vožnje</a> </li>
-            <li><a href="iznajmljivanje-autobusa-kragujexpress.html"> Iznajmi bus</a> </li>
-            <li><a href="onama.html"> O nama</a> </li>
-            <li><a href="kontakt.html"> Kontakt</a> </li>
-        </ul>
-
-    </header>
 <main id="error-message">
     <div class="message container">
        <h1> <i class="fa-solid fa-circle-exclamation"></i> Greška 404</h1>
         <div> <h3> 
         Stranica koju tražite ne postoji ili je privremeno nedostupna usled održavanja sajta</h3></div>
-       <div><h4>Kliknite da dugme ispod kako biste se vratili na početnu stranicu</h4></div> 
-    <div> <a class="btn" href="index.html">Početna</a></div> 
+       <div><h4>Kliknite na dugme ispod kako biste se vratili na početnu stranicu</h4></div> 
+    <div> <a class="btn" href="/">Početna</a></div> 
     </div>
 
 </main>
-   
-
-    <footer id="footer" class="footer">
-        <div class="footer-grid">
-            <section class="company-data">
-                <div class="footer-logo">
-                    <img src="assets/img/logo2.png" alt="Kragujexpress">
-                </div>
-                <h3 class="p">Saobraćajno preduzeće KRAGUJEXPRESS d.o.o. <br>
-
-                    Opornica bb, 34321 Kragujevac<br>
-                    PIB: 100561684<br>
-                    Matični broj: 1710279<br>
-                    E-pošta: <a href="mailto:kragujbus@gmail.com"> kragujbus@gmail.com</a><br>
-                    Tel: <a href="tel:+38134561040">+381 (0)34 561 040</a> </h3>
-            </section>
-            <section class="company-info">
-                <h3 class="text-secondary title">O nama</h3>
-
-                <p>Kragujexpress je jedna od vodećih kompanija za prevoz putnika u Kragujevcu koja se poslovima prevoza
-                    bavi
-                    od 1987. godine. Sa preko <span id="godinePoslovanja"></span> godina iskustva i uspešnog poslovanja
-                    na
-                    domaćem i inostranom tržištu u prevozu putnika.</p>
-                 
-            </section>
-            <section class="social-networks">
-                <h3 class="text-secondary title">Pratite nas na društvenim mrežama</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/Kragujexpress-640761903105497/"><img src="assets/img/facebook.svg"
-                            alt="Kragujexpress facebook"></a>
-
-                    <a href="https://www.instagram.com/kragujexpress/"> <img src="assets/img/instagram.svg"
-                            alt="Kragujexpress instagram"></a>
-                </div>
-            
-            </section>
-        </div>
-        <div class="copyright-info">&copy; <span id="year"></span> Kragujexpress, Kragujevac</div>
-    </footer>
-    <div id="lightboxBg">
-        <div id="lightboxImg">
-            <i id="close" class="fa-solid fa-x fa-lg"></i>
-            <i id="prev"  class="fa-solid fa-arrow-circle-left fa-2x"></i>
-            <img id="modalPhoto" src="assets/img/kragujexpress-turska.jpg" alt="slika">
-            <i id="next"  class="fa-solid fa-arrow-circle-right fa-2x"></i>
-        </div>
-    </div>
-    <script defer src="assets/js/app.js"></script>
 
 </body>
 

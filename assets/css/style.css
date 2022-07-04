@@ -88,6 +88,9 @@ section {
 .warning{
     border: 3px solid red;
 }
+.hide{
+    display: none;
+}
 /* header section start */
 #header .logo {
     font-size: 2rem;

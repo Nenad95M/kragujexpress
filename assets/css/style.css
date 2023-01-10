@@ -140,7 +140,7 @@ section {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../img/proba2.jpg) fixed no-repeat center center/cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.2)), url(../img/proba2.jpg) fixed no-repeat center center/cover;
 }
 
 #header .phone-menu {

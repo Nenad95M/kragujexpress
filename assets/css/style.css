@@ -167,7 +167,7 @@ section {
 }
 
 #header .hero-content {
-    visibility: hidden;
+    /* visibility: hidden; */
     color: floralwhite;
 }
 
@@ -193,7 +193,7 @@ section {
     color: #fff;
     margin: 1rem;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2em;
     width: 270px;
 }
 
@@ -232,7 +232,10 @@ section {
     }
 
     #header .hero {
-        background: url(../img/proba.jpg) no-repeat center center/cover;
+        background: url(../img/proba2.jpg) no-repeat center center/cover; 
+        min-height: 100vmin;
+        width: 100%;
+        background-size: cover;
     }
 
     #header .button-holder {

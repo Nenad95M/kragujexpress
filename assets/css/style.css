@@ -138,9 +138,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
-    background: url(../img/proba.jpg) no-repeat center center/cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../img/proba2.jpg) fixed no-repeat center center/cover;
 }
 
 #header .phone-menu {
@@ -167,8 +167,7 @@ section {
 }
 
 #header .hero-content {
-    /* visibility: hidden; */
-    color: floralwhite;
+    color: whitesmoke;
 }
 
 #header .hero-content h1 {
@@ -232,10 +231,8 @@ section {
     }
 
     #header .hero {
-        background: url(../img/proba2.jpg) no-repeat center center/cover; 
-        min-height: 100vmin;
-        width: 100%;
-        background-size: cover;
+        background: url(../img/proba2.jpg) no-repeat center/fill; 
+
     }
 
     #header .button-holder {

@@ -140,7 +140,7 @@ section {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.2)), url(../img/proba2.jpg) fixed no-repeat center center/100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.2)), url(../img/proba2.jpg) no-repeat center center/100%;
 }
 
 #header .phone-menu {
@@ -185,9 +185,9 @@ section {
 
 #header .button {
 
-    border: 1px solid var(--primary);
+    border: 1px solid var(--primary-darker);
     border-radius: 41px;
-    background-color: var(--primary);
+    background-color: var(--primary-darker);
     padding: 0.5rem;
     color: #fff;
     margin: 1rem;
@@ -197,11 +197,11 @@ section {
 }
 
 #header .button:hover {
-    background-color: var(--primary-darker);
+    background-color: var(--primary-lighter);
 }
 
 #header .button:active {
-    background-color: var(--primary-darker);
+    background-color: var(--primary-lighter);
     transform: scale(0.90);
 }
 

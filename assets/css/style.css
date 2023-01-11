@@ -140,7 +140,7 @@ section {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.2)), url(../img/proba2.jpg) fixed no-repeat center center/cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.2)), url(../img/proba2.jpg) fixed no-repeat center center/100%;
 }
 
 #header .phone-menu {
@@ -188,12 +188,12 @@ section {
     border: 1px solid var(--primary);
     border-radius: 41px;
     background-color: var(--primary);
-    padding: 0.6rem;
+    padding: 0.5rem;
     color: #fff;
     margin: 1rem;
     font-weight: 500;
     font-size: 1.2em;
-    width: 270px;
+    width: 300px;
 }
 
 #header .button:hover {
@@ -229,9 +229,11 @@ section {
     #header .phone-menu {
         display: flex;
     }
-
+    #header .hero-content {
+       color: floralwhite;
+    }
     #header .hero {
-        background: url(../img/proba2.jpg) no-repeat center/fill; 
+        background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.2)), url(../img/flota/bus-h1.jpg) no-repeat center center/cover; 
 
     }
 

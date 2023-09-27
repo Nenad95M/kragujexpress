@@ -101,6 +101,9 @@ section {
     font-weight: 600;
     font-style: oblique;
 }
+#header .logo img{
+   max-width: 300px;
+}
 
 #header .navbar {
     display: flex;

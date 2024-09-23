@@ -483,6 +483,9 @@ section {
     #bus-presentation .cards {
         grid-template-columns: auto;
     }
+    #bus-presentation .title {
+        font-size: xx-large;
+    }
 }
 
 /* BUS SLIDER */

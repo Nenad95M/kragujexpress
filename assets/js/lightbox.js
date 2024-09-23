@@ -43,12 +43,35 @@ image.addEventListener('click', (e)=>{
 
     })
 
-
+lightboxBg.addEventListener('click', (e)=>{
+    if(e.target !== modalPhoto && e.target !== next && e.target !== prev){
+        lightboxBg.classList.remove('active');
+    }
+});
+//zatvaranje modala na esc i prelazak na sledecu i prethodnu sliku na strelice
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        lightboxBg.classList.remove('active');
+    }
+    if (e.key === 'ArrowRight') {
+        currentPhoto = currentPhoto + 1;
+        if (currentPhoto >= maxIteration) {
+            currentPhoto = 0;
+        }
+        modalPhoto.src = images[currentPhoto].src;
+    }
+    if (e.key === 'ArrowLeft') {
+        currentPhoto = currentPhoto - 1;
+        if (currentPhoto <= 0) {
+            currentPhoto = maxIteration;
+        }
+        modalPhoto.src = images[currentPhoto].src;
+    }
+});
 
 //uklanjam active klasu kada se klikne bilo gde na pozadinu
 close.addEventListener('click', (e)=>{
     lightboxBg.classList.remove('active');
-}
+})
 
-
-)})();
+})();

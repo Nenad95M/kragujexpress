@@ -441,8 +441,12 @@ section {
 #buss-section .cards i {
     color: var(--primary);
     padding: 1rem;
-}
+    cursor: pointer;
 
+}
+.controlBTN{
+    cursor: pointer;
+}
 @media(max-width: 768px) {
     #buss-section .grid {
         grid-template-columns: auto;

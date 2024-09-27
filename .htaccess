@@ -1,0 +1,3 @@
+<FilesMatch "\.(css|js|png|jpg|webp|jpeg|gif|svg)$">
+    Header set Cache-Control "public, max-age=86400"
+</FilesMatch>
